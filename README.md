@@ -4,6 +4,6 @@
 
 This program is a game. Player is requested  to try
 to guess a number between a maximum and a minimum. He/she
-will have n attempts to guess the number. If he is not able 
-to figure out this number, he/she will lost. If not, he/she will win...
+will have n attempts to guess this number. If he is not able 
+to figure out this number, he/she will lost. If yes, he/she will win...
 
