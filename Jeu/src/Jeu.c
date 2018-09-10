@@ -12,8 +12,8 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define MAX_ATTEMPTS 3
-#define MAX_NUMBER 10
+#define MAX_ATTEMPTS 10
+#define MAX_NUMBER 1000
 
 int main( void ) {
 
@@ -22,7 +22,7 @@ int main( void ) {
 	printf( "You have %d attempts to know which number between 1 and %d I am thinking of\n", MAX_ATTEMPTS, MAX_NUMBER );
 
 	srand( time( NULL ) );
-	num = 1 + rand() % (11 - 1);  //variable = limite_inferior + rand() % (limite_superior +1 - limite_inferior) ;
+	num = 1 + rand() % (MAX_NUMBER - 1);  //variable = limite_inferior + rand() % (limite_superior +1 - limite_inferior) ;
 
 	for ( i = 0; i < MAX_ATTEMPTS; i++ ) {
 		printf("\n Enter the %d try :\n",(i+1));
