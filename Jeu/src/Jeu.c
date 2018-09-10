@@ -1,0 +1,45 @@
+/*
+ ============================================================================
+ Name        : Jeu.c
+ Author      : Miguel
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+#define MAX_ATTEMPTS 3
+#define MAX_NUMBER 10
+
+int main( void ) {
+
+	int num, i;
+
+	printf( "You have %d attempts to know which number between 1 and %d I am thinking of\n", MAX_ATTEMPTS, MAX_NUMBER );
+
+	srand( time( NULL ) );
+	num = 1 + rand() % (11 - 1);  //variable = limite_inferior + rand() % (limite_superior +1 - limite_inferior) ;
+
+	for ( i = 0; i < MAX_ATTEMPTS; i++ ) {
+		printf("\n Enter the %d try :\n",(i+1));
+		scanf("%d",&j);
+        if(j>x)
+        {
+            printf("%d is greater than x\n",j);
+        }else if(j<x)
+         {
+            printf("%d is less than x\n",j);
+        }else
+         {
+            printf("%d = x \n YOU win\n",j);
+            break;
+         }
+    }
+    printf("x=%d\n",x);
+
+	return EXIT_SUCCESS;
+}
