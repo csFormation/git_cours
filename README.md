@@ -11,5 +11,5 @@ to figure out this number, he/she will lost. If yes, he/she will win...
 Nice game, I tried 2 times, easy to win!!!
 added by li
 
-Nouvea test by Miguel
+Nouveau test by Miguel
 
