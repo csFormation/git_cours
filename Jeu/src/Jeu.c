@@ -2,7 +2,7 @@
  ============================================================================
  Name        : Jeu.c
  Author      : Miguel
- Version     :
+ Version     : 1.0
  Copyright   : Your copyright notice
  Description : Hello World in C, Ansi-style
  ============================================================================
@@ -27,17 +27,20 @@ int main( void ) {
 	for ( i = 0; i < MAX_ATTEMPTS; i++ ) {
 		printf("\n Enter the %d try :\n",(i+1));
 		scanf("%d",&j);
-        if(j>x)
+        if(num>x)
         {
-            printf("%d is greater than x\n",j);
-        }else if(j<x)
+            printf("%d is greater than x\n",num);
+        }else 
+						if(num<x)
          {
-            printf("%d is less than x\n",j);
+            printf("%d is less than x\n",num);
         }else
+
          {
-            printf("%d = x \n YOU win\n",j);
+            printf("%d = x \n YOU win\n",num);
             break;
          }
+
     }
     printf("x=%d\n",x);
 
